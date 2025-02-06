@@ -17,7 +17,7 @@ services:
       timeout: 10s
       retries: 5
     networks:
-      - app-network
+      - oracle-network
     deploy:
       resources:
         limits:
@@ -30,5 +30,5 @@ volumes:
     driver: local
 
 networks:
-  app-network:
+  oracle-network:
     driver: bridge
